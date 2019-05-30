@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<p>
+第一章内容第一章内容第一章内容第一章内容第一章内容第一章内容第一章内容第一章内容第一章内容第一章内容
+</p>
+<blockquote>
+解释说明
+</blockquote>
+<fontcolor="blue" size="5">字体标签</fontcolor><br />
+<em>今天天气不错～～</em><br />
+数学公式：x^2 <br /> x<sup>2</sup>
+<br />
+你喜欢的运动？
+<ul>
+    <li>唱</li>
+    <li>跳</li>
+    <li>rap</li>
+</ul>
+
+你喜欢的明星？
+<ol type="i">
+    <li>lisa</li>
+    <li>lisa</li>
+    <li>lisa</li>
+    <li>lisa</li>
+</ol>
+
+<script>
+function showImg(){
+    //jsp:DOM:document 
+    var img = document.getElementById("img1");
+    img.style.display="block";
+}
+function hideImg(){
+    var img = document.getElementById("img1");
+    img.style.display="none";
+}
+</script>
+
+<input type="button" value="显示" onclick="showImg()"/>
+<input type="button" value="隐藏" onclick="hideImg()"/>
+<img id="img1"src="/Users/houchang/Desktop/祝好/timg.jpeg"
+width="30%" height="30%"
+style="display:none;">
+
+</body>
+</html>
