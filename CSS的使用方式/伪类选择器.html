@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>伪类选择器</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    </head>
+    <!--
+        伪类选择器（错伪类），描述当前鼠标对标签的一种状态
+        link：表示鼠标没有访问过的状态
+        hover：鼠标经过状态
+        active：鼠标激活状态（点击了，但是还没有松开的）
+        visited：鼠标访问的过的
+        格式：
+            选择器：状态名称（不区分大小写）
+    -->
+    <style>
+        a:link{
+        color:#F00;
+        font-size:20px;
+        text-decoration:none;
+    }
+        a:visited{
+            color:blue;
+            font-size: 24px;
+        }
+        a:hover{
+            color:aqua;
+            font-size: 30px;
+        }
+        a:active{
+            color: yellow;
+            font-size: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <a href="#">超链接 </a>
+</body>
+</html>
