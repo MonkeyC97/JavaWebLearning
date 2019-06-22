@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js入门</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'>
+    function getFouces(){
+            //通过id属性获取标签对象
+            var username = document.getElementById("username");
+            //设置标签对象value属性
+            input.value = "";
+            
+    }
+    function getCheck(){
+        //定义一个用户名正则规则；用户名有5-14位组成在字母(不区分大小写)或者数字
+        var reg = /^$[a-zA-Z0-9]{5,14}/
+        //获取当前用户的内容
+        document.getElementById("username").value;
+
+        //获取span标签对象
+        var span = document.getElementById("user_span");
+        if(reg.test(username)){
+            //成功则设置span标签的innerHTML属性
+            span.innerHTML = "用户名可用".fontcolor
+        }
+    }
+    function checkAll(){
+        if(checkUserName){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="backent.html" method="POST" onsubmit="return checkAll">
+            用户名:<input type="text" onfocus="getFouces()" value="请输入用户名">
+            <!-- innerHYML属性：就是设置一个标签的文本-->
+            <span id = "user_span">
+                
+            </span>
+        </br>
+    </form>
+</body>
+</html>
