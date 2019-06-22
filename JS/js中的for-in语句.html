@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>for-in</title>
+
+    <!--
+        for-in 语句可以用来遍历数组/也可以用来遍历自定义对象的属性
+        自定义对象:
+            4种方式
+                推荐json格式(字面量值)  GSON/FASTJON/JSONLib
+                {"key":"value1"}    字符串类型
+
+                {"key":{
+                    "key1":"value1","value2"
+                }}
+
+                有参构造方式
+                无参构造方式
+                利用Object对象(代表所有对象的模版)
+                    var 对象名 = new Object();
+                    追加属性/追加方法
+
+
+    -->
+    <script>
+    //     /**
+    //      * 自定义对象 和函数定义一样
+    //      *  格式
+    //      *  function 对象名(属性名称{
+    //      *      this.属性名称 = 值1;
+    //      *      this.属性名称 = 值2;
+    //      * }
+    //      * 
+    //      * 创建对象 var 对象名称 = new 对象();
+    //      * /
+    //  //定义人对象
+    function Person(name,age){
+        this.name = name;
+        this.age = age;
+    }
+    var p = new Person("侯昌",22);
+
+    for(var i in p){
+        document.write(p[i]+"<br />")
+    }
+    var arr = [10,20,30,40];
+    for(var i = 0;i < arr.length;i++){
+        document.write(arr[i] + "&nbsp;&nbsp");
+    }
+    for(var j in arr){
+        document.write(arr[j] + "&nbsp;&nbsp");
+    }
+
+    </script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+</body>
+</html>
