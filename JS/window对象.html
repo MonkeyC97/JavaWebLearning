@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>window对象</title>   
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        /**
+         * 1.前端页面跳转：
+         *      1.超链接
+         *      2.open()
+         *      3.location的href属性
+         *2. 后端跳转页面
+         * request.getRequestDispatcher("/xx.jsp/html")
+         *      .forward(request,response);
+         *       请求转发:(HttpServletRequest request)
+         *        重定向:(HttpSeveletRequest response)
+         * response.sendRedirect("/xx.jsp/xx.html");
+         * 
+         * 
+         * 3.open("url","打开方式")
+         *  setInterval("task()",毫秒数):重复执行
+         * 
+         * 4.setTimeout("taks()",毫秒数):经过毫秒数后执行一次任务
+         * 
+         * 5.
+         */
+        function testWindowOpen(){
+            //window对象：顶级对象
+            open
+        }
+            var intervalTaskId;
+        function testclearInterval(){
+            window.clearInterval(intervalTaskId);
+        }
+        function testWindowInte(){
+            intervalTaskId =  setInterval("testWindowOpen",3000);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
