@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>内置对象 String</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+       var str1 = new String("hello");
+       //创建了两个对象：堆内存中new  xxx
+        //方法区
+       var str2 = new String("hello");
+       document.write(str2 == str1+"<br />");//false
+        /**
+         * 
+         * valueOf方法 返回指定对象的原始值(比较他们的内容是否相同)
+        */
+       document.write(str1.valueOf == str2.valueOf+"<br />");
+
+       //定义方式2:
+       var str3 = "hello";
+       var str4 = "hello";
+
+       
+       document.write(str3.valueOf == str4.valueOf+"<br />");
+
+        
+       /**关于String对象常用的内置对象
+        * 1.charAt(var index);
+        * 2.indexOf(var str);查询当前子串中第一次出现的索引
+        * 3.lastIndexOf(var str);查询当前子串中最后一次出现的索引
+        * 4.fontColor(var str);给字符串进行颜色标记
+        * subString(var start,var end);从指定位置截取到指定位置结束（）
+        * subStr(var startn,var length);从指定位置截取指定长度
+        * split(var str);字符串的分割功能，返回字符串数组
+        */
+       
+
+        var str = "hello world";
+        document.write("charAt():"+str.charAt(4)+"<br />");
+        document.write("indexOf():"+str.indexOf(2)+"<br />");
+        document.write("lastIndexOf():"+str.lastIndexOf("a")+"<br />");
+        document.write("fontColor():"+str.fontcolor("#00f")+"<br />");
+        document.write("substring():+"+str.substring(5,9)+"<br />");
+        document.write("substr:"+str.substr(5,4)+"<br />");
+        document.write("<hr />");
+        //分割功能
+        var s = "PHP-Hadoop-Java-Go";
+        var strArray = s.split("-");
+        for(var i = 0; i < strArray.length; i++){
+            document.write(strArray[i]+"<br />");
+        }
+
+    </script>
+</head>
+
+
+<body>
+    
+</body>
+</html>
