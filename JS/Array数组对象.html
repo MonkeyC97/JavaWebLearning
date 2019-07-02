@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Array数组对象</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+
+       //定义数组方式1
+       var arr1 = new Array();
+       alert(arr1.length);
+       arr[0] = 10;
+       arr[1] = 20;
+       arr[2] = 30;
+
+       for(var i = 0;i < arr1.length;i++){
+           document.write(arr1[i] +"&nbsp;&nbsp");
+       }
+       //定义数组方式2
+        var arr2 = new Array(2);
+        alert(arr.length);
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = "hello";//追加元素
+        alert(arr2.length);
+        for(var i = 0;i < arr2.length;i++){
+           document.write(arr2[i] +"&nbsp;&nbsp");
+       }
+       //方式3:js的静态初始化，直接指定具体元素值
+       /**
+        * 
+        * 
+        */
+
+        var arr3 = [10,"hello",true,new Object()];
+        for(var i = 0; i < arr.length;i++){
+            document.write(arr3[i] +"&nbsp;&nbsp");
+        }
+        document.write("<hr />");
+        
+        //常用的方法
+        /**
+         * join
+         * 
+         */
+
+            var arr = ["JavaEE PHP C++ C Python"];
+            var str = arr.join("-");
+            document.write("str:"+str);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
