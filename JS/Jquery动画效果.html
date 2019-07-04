@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jquery动画效果</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        //显示
+        $("#btn1").click(function(){
+            //获取id="img1"的img标签对象
+            //show():显示
+            //滑动效果
+            // $("#img1").slideDown(2000);
+            //淡入效果
+            $("img1").fadeIn(2000);
+        });
+        //隐藏
+        $("#btn2").click(function(){
+            //滑动效果
+            // $("#img1").slideUp(2000);
+            //淡出效果fadeOut()
+            $("img1").fadeOut(2000);
+            //自定义
+            $("#img1").animate({width:"800px",opacity:"0"},5000);
+        });
+
+    </script>
+</head>
+
+<body>
+    <input type = "bytton" value = "显示" id = "btn1">
+    <input type = "button" value = "隐藏" id = "btn2"><br />
+    <img src=/Users/houchang/Documents/JavaWeb/img/1.jpg></img>
+</body>
+</html>

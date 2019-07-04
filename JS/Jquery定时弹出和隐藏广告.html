@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jquery定时弹出和隐藏广告</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+
+        function showAdv(){
+            $("#img1").slideDown(3000);
+        }
+
+        function hideAdv(){
+            // $("#img1").slideUp(3000);
+            
+        }
+    //页面载入
+    $(function(){
+        //仅执行一次定时器
+        setTimeout("showAdv()",3000);
+    });
+    </script>
+</head>
+<body>
+    <img id="img1" style="display:none" scr="/Users/houchang/Documents/JavaWeb/img/okwu-athletics.jpg">
+</body>
+</html>

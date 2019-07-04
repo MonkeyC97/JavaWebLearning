@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>js和Jquery对象的转换</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function testJs(){
+            //通过id属性值来获取标签对象
+            var div = document.getElementById("div1");
+            //js对象修改内容
+            // div.innerHTML="使用原生Js的方式改变了Div的内容";
+
+            //js对象--->Jquery：只需要将js对象使用$()包裹起来
+            //在企业中：Jquery对象js对象前面加上$
+            var $div = $(div);
+
+            //使用Jquery对象改变文本内容html("")
+            $div.html("将js对象转换成了Jquery对象修改了div的文本");
+
+            //页面载入
+            $(function(){
+                $("#btn1").click(function(){
+                    var $div = $("#div");//Jquery的便签选择器
+                    //转换成Js对象改变div的文本内容
+                    //get
+                    var jsDiv = $div.get(1);
+                    jsDiv.innerHTML="将Jquery对象转换成了Js对象修改了div的内容";
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="使用Js/Jq改变div的内容"></input>
+    <div id = "div1">
+        这里的文本内容将会被Js/Jq对象改变
+    </div><br />
+    <input type="button" id = "btn1" value="使用Jq/js对象改变div内容"></input>
+</body>
+</html>
