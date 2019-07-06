@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jq的基本使用</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <!--
+        步骤1:
+                1)导入核心js库
+                2)页面载入事件(Jquery)程序的入口
+                3)确定页面中哪个标签派发的具体事件
+                        a）具体的业务
+    -->
+    <!--
+        引入js库
+    -->
+    <script src=></script>
+    <script>
+        //页面载入事件
+        $(function(){
+            //确定哪个标签派发的具体事件
+            $("#btn1").click(function(){
+                //具体的业务：改变span标签的内容
+                //原生js:标签对象
+                //Jquery:标签对象.html("文本内容")
+                $("#span").html("使用Jquery对象改变了span标签的内容");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id = "btn1"> 点击  </button>
+    <span id="span">span的内容</span>
+</body>
+</html>
