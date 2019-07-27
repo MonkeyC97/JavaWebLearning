@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ServletProjects:Web exploded">
+    <output-path>$USER_HOME$/Documents/apache-tomcat-9.0.22/webapps/servlet_cookies</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ServletProjects/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ServletProjects" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
